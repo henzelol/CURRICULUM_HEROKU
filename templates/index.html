@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>CURRICULUM</title>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+.scroll input{
+  display: none;
+}
+.bloco{
+    width:100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.links{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+}
+.links label{
+  padding: 10px 0;
+  flex-grow: 1;
+  cursor: pointer;
+  transition: all .4s;
+  text-align: center;
+  font-family: 'arial';
+  font-size: 100%;
+  color:#fff;
+}
+.links label:hover{
+    background-color: rgba(255, 255, 255,.2);
+}
+#sobremim{
+  background-color: #f00;
+font-family: monospace;
+  font-size: 40px;
+  font-style: italic;
+}
+#certificacoes{
+  background-color: #69f;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+#academico{
+  background-color:#f808;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+#experiencias{
+  background-color: #aaa;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+#contato{
+  background-color: #414950;
+  font-family: monospace;
+    font-size: 40px;
+    font-style: italic;
+}
+.scroll{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.sections{
+  transition: all .4s;
+}
+#rd_sobremim:checked ~ .sections{
+  margin-top: 0vh;
+}
+#rd_certificacoes:checked ~ .sections{
+  margin-top: -100vh
+}
+#rd_academico:checked ~ .sections{
+  margin-top: -200vh
+}
+#rd_experiencias:checked ~ .sections{
+  margin-top: -300vh
+}
+#rd_contato:checked ~ .sections{
+  margin-top: -400vh
+}
+}
+</style>
+</head>
+<body>
+<nav class="links">
+    <label for="rd_sobremim">ABOUT ME</label>
+    <label for="rd_certificacoes">CERTIFICATIONS</label>
+    <label for="rd_academico">ACADEMIC</label>
+    <label for="rd_experiencias">EXPERIENCES</label>
+    <label for="rd_contato">CONTACT</label>
+    <form action="/">
+      <button type="submit" class="btn btn-default">Out</button>
+</nav>
+
+<div class="scroll">
+    <input type="radio" name="grupo" id="rd_sobremim">
+    <input type="radio" name="grupo" id="rd_certificacoes">
+    <input type="radio" name="grupo" id="rd_academico">
+    <input type="radio" name="grupo" id="rd_experiencias">
+    <input type="radio" name="grupo" id="rd_contato">
+
+<section class="sections">
+    <section class="bloco" id="sobremim">
+    <ul>
+    <li>Name :Henzel Almeida dos Santos</li>
+    <li>19 Yers-old</li>
+    <li>Determinated</li>
+    <li>Competitive</li>
+    <li>Enterprising</li>
+    <li>Love for security and IA</li>
+    <li>Desire to always learn and stay updated</li>
+    </ul>
+    </section>
+    <section class="bloco" id="certificacoes">
+    <ul>
+    <li>Advanced certification in English by Person</li>
+    <li>Advanced certification in English by Wizard</li>
+    <li>Certification in Rashberry Pi</li>
+    <li>Certification in SAP</li>
+    </ul>
+    </section>
+    <section class="bloco" id="academico"><ul>
+    <li>Graduating in computer engineering</li>
+    <li>College UNIFACS-Universidade Salvador</li>
+    </ul>
+    </section>
+    <section class="bloco" id="experiencias">
+    <ul>
+    <li>Exchanging in Washigton DC</li>
+    <li>Intermediate Knowledge in c/html/CSS/Linux/Python,Git,OpenCV</li>
+    <li>Basic Knowledge in c++/node.js, Flask, Machine Learning, SAP</li>
+    <li>Love for microprocessors :Rashberry Pi/Arduino</li>
+    </ul>
+    </section>
+    <section class="bloco" id="contato">
+    <ul>
+    <li>TIM WPP(71)99269-1381</li>
+    <li>E-mail:henzelmsn3002@hotmail.com</li>
+    <li> <a href="https://www.linkedin.com/in/henzel-santos-406588161/">LINKEDin</a>
+    <li> <a href="https://github.com/henzelol">GITHUB</a>
+    </section>
+
+
+</section>
+</body>
+</html>
